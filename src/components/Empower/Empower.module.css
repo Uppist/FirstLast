@@ -75,6 +75,8 @@
 
   .empower img {
     background: url("../../../assets/mobile/Empower/bg.png") no-repeat;
+    background-position-x: 245px;
+    background-position-y: 265px;
   }
 
   .empower {
