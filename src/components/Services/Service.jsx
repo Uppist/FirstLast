@@ -1,7 +1,6 @@
 /** @format */
 
 import React from "react";
-import image1 from "../../../assets/desktop/Services/image1.png";
 import styles from "./Service.module.css";
 import Data from "./Service.json";
 
