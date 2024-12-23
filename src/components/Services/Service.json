@@ -1,12 +1,12 @@
 [
   {
-    "image": "../assets/desktop/Services/image1.png",
+    "image": "assets/desktop/Services/image1.png",
     "Title": "Health Risk Assessments (HRAs)",
     "Text": "Nature(individual health risk assessment) vs Nurture (Environment/organization health risk assessment)",
     "book": "Book Now"
   },
   {
-    "image": "/FirstLast/assets/desktop/Services/image2.png",
+    "image": "assets/desktop/Services/image2.png",
     "Title": "Mental Health and Stress Management",
     "Text": "Empowering employees with tools and support to manage stress and enhance mental well-being",
     "book": "Book Now"
