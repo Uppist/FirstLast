@@ -1,0 +1,54 @@
+/** @format */
+
+@import "../../style.css";
+
+.client {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 100px 0px;
+  align-items: center;
+}
+
+.client h2 {
+  font-size: 48px;
+  color: var(--color-bg);
+  font-family: var(--font-cormorant);
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.client h2 label {
+  font-weight: 700;
+}
+
+.client div {
+  display: flex;
+  align-items: center;
+  gap: 85px;
+}
+
+@media only screen and (max-width: 767px) {
+  .client {
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px 0px;
+  }
+
+  .client div {
+    flex-direction: column;
+    gap: 31px;
+  }
+  .client h2 {
+    font-size: 24px;
+  }
+
+  .image1 {
+    width: 210px;
+  }
+
+  .image2 {
+    width: 100px;
+  }
+}

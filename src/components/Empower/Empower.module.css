@@ -1,0 +1,114 @@
+/** @format */
+
+@import "../../style.css";
+
+.background {
+  background-color: var(--color-background);
+}
+
+.empower {
+  margin-top: 115px;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 100px;
+  background: url("../../../assets/desktop/Empower/image3.png") no-repeat;
+  background-position-x: right;
+}
+
+.empower img {
+  background: url("../../../assets/desktop/Empower/bg1.png") no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.empower div {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.empower div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.empower label {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-bg);
+  font-family: var(--font-cormorant);
+}
+
+.empower span {
+  color: var(--color-text);
+  font-size: 25px;
+  font-family: var(--font-source);
+  font-weight: 400;
+}
+
+.empower button {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  padding: 18px 56px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  text-transform: uppercase;
+  border: 0;
+}
+
+.mobileimg {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .desktopimg {
+    display: none;
+  }
+
+  .mobileimg {
+    display: block;
+  }
+
+  .empower img {
+    background: url("../../../assets/mobile/Empower/bg.png") no-repeat;
+  }
+
+  .empower {
+    margin-top: 92px;
+    padding: 0px;
+    align-items: normal;
+    flex-direction: column-reverse;
+    background: url("../../../assets/mobile/Empower/bg2.png") no-repeat;
+  }
+
+  .empower div {
+    margin-top: -125px;
+    padding: 25px;
+    gap: 15px;
+  }
+
+  .empower div > div {
+    background-color: var(--color-bg);
+    padding: 17px 25px;
+  }
+  .empower label {
+    font-size: 20px;
+    color: var(--color-primary);
+  }
+
+  .empower span {
+    font-size: 12px;
+    color: var(--color-primary);
+  }
+
+  .empower button {
+    color: var(--color-bg);
+    background-color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,64 @@
+/** @format */
+
+@import "../../style.css";
+
+.choose {
+  display: flex;
+  align-items: center;
+  padding: 100px 100px 0px 0px;
+}
+
+.choosemobile {
+  display: none;
+}
+
+.choose div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: -130px;
+}
+
+.choose h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: var(--font-cormorant);
+  color: var(--color-bg);
+}
+
+.choose ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0;
+}
+
+.choose li {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: var(--font-source);
+  color: var(--color-text);
+}
+
+.choose span {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 767px) {
+  .chooseimg {
+    display: none;
+  }
+
+  .choosemobile {
+    display: block;
+  }
+
+  .choose h2 {
+    font-size: 24px;
+  }
+
+  .choose li {
+    font-size: 16px;
+  }
+}

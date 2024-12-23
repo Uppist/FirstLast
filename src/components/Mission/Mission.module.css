@@ -1,0 +1,65 @@
+/** @format */
+
+@import "../../style.css";
+
+.background {
+  background-color: var(--color-background);
+}
+.mission {
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  gap: 32px;
+  margin-top: 100px;
+  background: url("../../../assets/desktop/Mission/bg.png") no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.mission h2 {
+  font-size: 48px;
+  color: var(--color-bg);
+  font-family: var(--font-cormorant);
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.mission h2 label {
+  font-weight: 700;
+}
+
+.mission span {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-text);
+  font-family: var(--font-source);
+}
+
+@media only screen and (max-width: 767px) {
+  .mission {
+    flex-direction: column-reverse;
+    background: url("../../../assets/mobile/Mission/bg.png") no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    padding: 25px;
+    margin-top: 50px;
+    gap: 0;
+  }
+
+  .mission img {
+    width: 300px;
+    margin-top: 60px;
+  }
+
+  .mission span {
+    font-size: 16px;
+  }
+
+  .mission h2 {
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    top: -335px;
+  }
+}
