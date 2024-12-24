@@ -63,3 +63,13 @@
     top: -335px;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+  .mission {
+    flex-direction: column-reverse;
+  }
+
+  .mission h2 {
+    text-align: center;
+  }
+}

@@ -2,11 +2,9 @@
 
 import React, { useState, useRef } from "react";
 import styles from "./NavBar.module.css";
-import fl from "../../../assets/desktop/NavBar/fllogo.png";
-import flmobile from "../../../assets/mobile/NavBar/image1.png";
 import Logo from "./Logo";
 
-export default function NavBar({ aboutRef, serviceRef, contactRef }) {
+export default function NavBar({ aboutRef, serviceRef, contactRef, homeRef }) {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   function sideBar() {
@@ -32,7 +30,9 @@ export default function NavBar({ aboutRef, serviceRef, contactRef }) {
         <Logo />
 
         <ul className={styles.navul}>
-          <li className={styles.list}>Home</li>
+          <li className={styles.list} onClick={() => scrollToSection(homeRef)}>
+            Home
+          </li>
           <li
             className={styles.lists}
             onClick={() => scrollToSection(aboutRef)}
@@ -94,7 +94,8 @@ export default function NavBar({ aboutRef, serviceRef, contactRef }) {
           }`}
         >
           <div className={styles.imageclose}>
-            <img src={flmobile} alt='' />
+            <Logo />
+
             <a className='dropdown-close' onClick={onClose}>
               <svg
                 width='24'
@@ -115,18 +116,32 @@ export default function NavBar({ aboutRef, serviceRef, contactRef }) {
           </div>
 
           <ul className={styles.sidebarmenu}>
-            <li className={styles.sidebarlist}>Home</li>
+            <li
+              className={styles.sidebarlist}
+              onClick={() => {
+                scrollToSection(homeRef);
+                onClose();
+              }}
+            >
+              Home
+            </li>
             <hr />
             <li
               className={styles.sidebarlist}
-              onClick={() => scrollToSection(aboutRef)}
+              onClick={() => {
+                scrollToSection(aboutRef);
+                onClose();
+              }}
             >
               About Us
             </li>
             <hr />
             <li
               className={styles.sidebarlist}
-              onClick={() => scrollToSection(serviceRef)}
+              onClick={() => {
+                scrollToSection(serviceRef);
+                onClose();
+              }}
             >
               Our Services
             </li>

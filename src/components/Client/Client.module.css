@@ -52,3 +52,9 @@
     width: 100px;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+  .client div {
+    flex-direction: column;
+  }
+}

@@ -144,6 +144,7 @@
     font-weight: 600;
     color: var(--color-text);
     font-family: var(--font-source);
+    cursor: pointer;
   }
 
   .sidebarmenu hr {
@@ -163,5 +164,16 @@
     color: var(--color-primary);
     text-transform: uppercase;
     width: 145px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+  .nav {
+    padding: 0px 20px;
+  }
+
+  .navul {
+    font-size: 16px;
+    gap: 16px;
   }
 }
