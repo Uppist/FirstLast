@@ -1,48 +1,48 @@
 [
   {
-    "image": "assets/desktop/Services/image1.jpg",
+    "image": "/FirstLast/assets/desktop/Services/image1.jpg",
     "Title": "Health Risk Assessments (HRAs)",
     "Text": "Nature(individual health risk assessment) vs Nurture (Environment/organization health risk assessment)",
     "book": "Book Now"
   },
   {
-    "image": "assets/desktop/Services/image2.jpg",
+    "image": "/FirstLast/assets/desktop/Services/image2.jpg",
     "Title": "Mental Health and Stress Management",
     "Text": "Empowering employees with tools and support to manage stress and enhance mental well-being",
     "book": "Book Now"
   },
   {
-    "image": "assets/desktop/Services/image3.jpg",
+    "image": "/FirstLast/assets/desktop/Services/image3.jpg",
     "Title": "Physical Fitness Programs",
     "Text": "Inspiring employees to embrace active lifestyles through tailored fitness programs for improved health and energy.",
     "book": "Book Now"
   },
   {
-    "image": "assets/desktop/Services/image4.jpg",
+    "image": "/FirstLast/assets/desktop/Services/image4.jpg",
     "Title": "Nutrition and Wellness Coaching",
     "Text": "Guiding employees toward healthier choices with personalized nutrition and wellness support.",
     "book": "Book Now"
   },
   {
-    "image": "assets/desktop/Services/image5.jpg",
+    "image": "/FirstLast/assets/desktop/Services/image5.jpg",
     "Title": "Workplace Ergonomics",
     "Text": "Creating comfortable, efficient work spaces to enhance productivity and well-being.",
     "book": "Book Now"
   },
   {
-    "image": "assets/desktop/Services/image6.jpg",
+    "image": "/FirstLast/assets/desktop/Services/image6.jpg",
     "Title": "Employee Engagement Programs",
     "Text": "Wellness challenges, team-buildingactivities, mindset bootcamps",
     "book": "Book Now"
   },
   {
-    "image": "assets/desktop/Services/image7.jpg",
+    "image": "/FirstLast/assets/desktop/Services/image7.jpg",
     "Title": "Organizational Wellness Consultation With Managers",
     "Text": "For profitable working relationships, both horizontally and vertically.",
     "book": "Book Now"
   },
   {
-    "image": "assets/desktop/Services/image8.jpg",
+    "image": "/FirstLast/assets/desktop/Services/image8.jpg",
     "Title": "Liaison to Advanced Certified Therapy",
     "Text": "Connecting employees to specialized therapy services for comprehensive mental health support when necessary.",
     "book": "Book Now"
