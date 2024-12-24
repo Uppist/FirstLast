@@ -1,10 +1,16 @@
 /** @format */
 
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import Logo from "./Logo";
 
-export default function NavBar({ aboutRef, serviceRef, contactRef, homeRef }) {
+export default function NavBar({
+  scrollToSection,
+  aboutRef,
+  serviceRef,
+  contactRef,
+  homeRef,
+}) {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   function sideBar() {
@@ -14,15 +20,6 @@ export default function NavBar({ aboutRef, serviceRef, contactRef, homeRef }) {
   function onClose() {
     setIsSidebarVisible(false);
   }
-
-  const scrollToSection = (ref) => {
-    if (ref?.current) {
-      window.scrollTo({
-        top: ref.current.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <header className={styles.firstsection}>
@@ -148,7 +145,10 @@ export default function NavBar({ aboutRef, serviceRef, contactRef, homeRef }) {
             <hr />
             <li
               className={styles.sidebarcontact}
-              onClick={() => scrollToSection(contactRef)}
+              onClick={() => {
+                scrollToSection(contactRef);
+                onClose();
+              }}
             >
               Contact Us
             </li>

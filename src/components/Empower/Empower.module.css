@@ -75,8 +75,8 @@
 
   .empower img {
     background: url("../../../assets/mobile/Empower/bg.png") no-repeat;
-    background-position-x: 245px;
-    background-position-y: 265px;
+    background-position-x: right;
+    background-position-y: center;
   }
 
   .empower {
@@ -85,6 +85,7 @@
     align-items: normal;
     flex-direction: column-reverse;
     background: url("../../../assets/mobile/Empower/bg2.png") no-repeat;
+    background-position-x: right;
   }
 
   .empower div {

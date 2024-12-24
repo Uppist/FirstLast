@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./Service.module.css";
 import Data from "./Service.json";
 
-export default function Service() {
+export default function Service({ scrollToSection, contactRef }) {
   return (
     <section className={styles.service}>
       <h2>
@@ -22,7 +22,9 @@ export default function Service() {
                 <hr />
                 <span>{data.Text}</span>
               </div>
-              <button>{data.book}</button>
+              <button onClick={() => scrollToSection(contactRef)}>
+                {data.book}
+              </button>
             </div>
           </div>
         ))}

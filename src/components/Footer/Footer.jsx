@@ -2,12 +2,12 @@
 
 import React from "react";
 import styles from "./Footer.module.css";
-import image1 from "../../../assets/desktop/Footer/image1.png";
 import image2 from "../../../assets/desktop/Footer/uppist.png";
 import image3 from "../../../assets/desktop/Footer/designedby.png";
 import Logo from "../NavBar/Logo";
+import Uppist from "./Uppist";
 
-export default function Footer() {
+export default function Footer({ scrollToSection, aboutRef, serviceRef }) {
   return (
     <footer className={styles.footer}>
       <div className={styles.details}>
@@ -114,10 +114,8 @@ export default function Footer() {
           <label>Quick Links</label>
 
           <ul>
-            <li>About us</li>
-            <li>Our Services</li>
-            <li>Privacy Policy</li>
-            <li>Terms of Use</li>
+            <li onClick={() => scrollToSection(aboutRef)}>About us</li>
+            <li onClick={() => scrollToSection(serviceRef)}>Our Services</li>
           </ul>
         </div>
         <div className={styles.connect}>
@@ -270,7 +268,7 @@ export default function Footer() {
 
       <span>
         <img src={image3} alt='' />
-        <img src={image2} alt='' />
+        <Uppist />
       </span>
     </footer>
   );

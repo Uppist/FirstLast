@@ -13,9 +13,9 @@ export default function Empower() {
         <div>
           <div>
             <label> Empowering People for Productivity through Wellness.</label>
-            <span>
+            {/* <span>
               Boost Team Wellness and Productivity with First and Last Wellness
-            </span>
+            </span> */}
           </div>
           <button>Get Started</button>
         </div>

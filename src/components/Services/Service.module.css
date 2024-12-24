@@ -94,6 +94,10 @@
     gap: 25px;
   }
 
+  .service {
+    margin-top: 50px;
+  }
+
   .service h2 {
     font-size: 24px;
   }

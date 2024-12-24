@@ -18,6 +18,15 @@ export default function App() {
   const contactRef = useRef(null);
   const homeRef = useRef(null);
 
+  const scrollToSection = (ref) => {
+    if (ref?.current) {
+      window.scrollTo({
+        top: ref.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <NavBar
@@ -25,6 +34,7 @@ export default function App() {
         serviceRef={serviceRef}
         contactRef={contactRef}
         homeRef={homeRef}
+        scrollToSection={scrollToSection}
       />
       <div ref={homeRef}>
         <Empower />
@@ -34,13 +44,17 @@ export default function App() {
       </div>
       <Mission />
       <div ref={serviceRef}>
-        <Service />
+        <Service contactRef={contactRef} scrollToSection={scrollToSection} />
       </div>
       <Client />
       <Unlock />
       <Choose />
       <div ref={contactRef}>
-        <Footer />
+        <Footer
+          aboutRef={aboutRef}
+          serviceRef={serviceRef}
+          scrollToSection={scrollToSection}
+        />
       </div>
     </>
   );
