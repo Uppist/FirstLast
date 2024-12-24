@@ -47,7 +47,7 @@ export default function App() {
         <Service contactRef={contactRef} scrollToSection={scrollToSection} />
       </div>
       <Client />
-      <Unlock />
+      <Unlock contactRef={contactRef} scrollToSection={scrollToSection} />
       <Choose />
       <div ref={contactRef}>
         <Footer
