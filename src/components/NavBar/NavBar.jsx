@@ -1,33 +1,57 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./NavBar.module.css";
 import fl from "../../../assets/desktop/NavBar/fllogo.png";
 import flmobile from "../../../assets/mobile/NavBar/image1.png";
+import Logo from "./Logo";
 
-export default function NavBar() {
+export default function NavBar({ aboutRef, serviceRef, contactRef }) {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   function sideBar() {
     setIsSidebarVisible(true);
-    console.log("hello");
   }
 
   function onClose() {
     setIsSidebarVisible(false);
   }
+
+  const scrollToSection = (ref) => {
+    if (ref?.current) {
+      window.scrollTo({
+        top: ref.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <header className={styles.firstsection}>
       <nav className={styles.nav}>
-        <img src={fl} alt='logo' className={styles.fllogo} />
-        <img src={flmobile} alt='logo' className={styles.flmobile} />
+        <Logo />
 
         <ul className={styles.navul}>
           <li className={styles.list}>Home</li>
-          <li className={styles.lists}>About Us</li>
-          <li className={styles.lists}>Our Services</li>
+          <li
+            className={styles.lists}
+            onClick={() => scrollToSection(aboutRef)}
+          >
+            About Us
+          </li>
+          <li
+            className={styles.lists}
+            onClick={() => scrollToSection(serviceRef)}
+          >
+            Our Services
+          </li>
 
-          <li className={styles.listcontact}>Contact Us</li>
+          <li
+            className={styles.listcontact}
+            onClick={() => scrollToSection(contactRef)}
+          >
+            Contact Us
+          </li>
 
           <li className={styles.listmenu} onClick={sideBar}>
             <a className='dropdown'>
@@ -93,11 +117,26 @@ export default function NavBar() {
           <ul className={styles.sidebarmenu}>
             <li className={styles.sidebarlist}>Home</li>
             <hr />
-            <li className={styles.sidebarlist}>About Us</li>
+            <li
+              className={styles.sidebarlist}
+              onClick={() => scrollToSection(aboutRef)}
+            >
+              About Us
+            </li>
             <hr />
-            <li className={styles.sidebarlist}>Our Service</li>
+            <li
+              className={styles.sidebarlist}
+              onClick={() => scrollToSection(serviceRef)}
+            >
+              Our Services
+            </li>
             <hr />
-            <li className={styles.sidebarcontact}>Contact Us</li>
+            <li
+              className={styles.sidebarcontact}
+              onClick={() => scrollToSection(contactRef)}
+            >
+              Contact Us
+            </li>
           </ul>
         </div>
       </nav>

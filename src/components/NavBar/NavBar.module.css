@@ -9,6 +9,11 @@
   box-shadow: 0px 5px 7px hsla(0, 0%, 0%, 0.04);
 }
 
+.logo {
+  width: 118px;
+  height: auto;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -59,6 +64,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .logo {
+    width: 68px;
+  }
   .nav {
     padding: 6px 24px;
   }

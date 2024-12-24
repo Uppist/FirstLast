@@ -5,6 +5,7 @@ import styles from "./Footer.module.css";
 import image1 from "../../../assets/desktop/Footer/image1.png";
 import image2 from "../../../assets/desktop/Footer/uppist.png";
 import image3 from "../../../assets/desktop/Footer/designedby.png";
+import Logo from "../NavBar/Logo";
 
 export default function Footer() {
   return (
@@ -103,7 +104,7 @@ export default function Footer() {
       <hr />
       <div className={styles.footer2}>
         <div>
-          <img src={image1} alt='' />
+          <Logo />
           <h2>
             Empowering organizations with holistic wellness solutions for a
             healthier, more productive workforce.
