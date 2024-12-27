@@ -6,7 +6,7 @@ import empowermobile from "../../../assets/mobile/Empower/image1.png";
 
 import styles from "./Empower.module.css";
 
-export default function Empower() {
+export default function Empower({ aboutRef, scrollToSection }) {
   return (
     <section className={styles.background}>
       <div className={styles.empower}>
@@ -17,7 +17,7 @@ export default function Empower() {
               Boost Team Wellness and Productivity with First and Last Wellness
             </span> */}
           </div>
-          <button>Get Started</button>
+          <button onClick={() => scrollToSection(aboutRef)}>Get Started</button>
         </div>
         <img className={styles.desktopimg} src={empower} alt='image' />
         <img className={styles.mobileimg} src={empowermobile} alt='image' />

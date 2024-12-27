@@ -37,7 +37,7 @@ export default function App() {
         scrollToSection={scrollToSection}
       />
       <div ref={homeRef}>
-        <Empower />
+        <Empower aboutRef={aboutRef} scrollToSection={scrollToSection} />
       </div>
       <div ref={aboutRef}>
         <About />
