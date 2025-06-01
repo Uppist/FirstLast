@@ -11,6 +11,7 @@ import Client from "./components/Client/Client";
 import Unlock from "./components/Unlock/Unlock";
 import Choose from "./components/Choose/Choose";
 import Footer from "./components/Footer/Footer";
+import Bio from "./components/Bio/Bio";
 
 export default function App() {
   const aboutRef = useRef(null);
@@ -49,6 +50,7 @@ export default function App() {
       <Client />
       <Unlock contactRef={contactRef} scrollToSection={scrollToSection} />
       <Choose />
+      <Bio />
       <div ref={contactRef}>
         <Footer
           aboutRef={aboutRef}
