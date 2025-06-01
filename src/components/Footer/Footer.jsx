@@ -6,6 +6,7 @@ import image2 from "../../../assets/desktop/Footer/uppist.png";
 import image3 from "../../../assets/desktop/Footer/designedby.png";
 import Logo from "../NavBar/Logo";
 import Uppist from "./Uppist";
+import { Link } from "react-router-dom";
 
 export default function Footer({ scrollToSection, aboutRef, serviceRef }) {
   return (
@@ -75,7 +76,7 @@ export default function Footer({ scrollToSection, aboutRef, serviceRef }) {
           <div className={styles.location}>
             <h2>Contact</h2>
             <span>
-              <p>Email</p>: firstandlastwellness@gmail.com
+              <p>Email</p>: mavis@firstandlastwellnesscompany.com.ng
             </span>
           </div>
         </div>
@@ -264,11 +265,13 @@ export default function Footer({ scrollToSection, aboutRef, serviceRef }) {
         </div>
       </div>
 
-      <label>© First and Last Wellness Company 2024. All rights reserved</label>
+      <label>© First and Last Wellness Company 2025. All rights reserved</label>
 
       <span>
         <img src={image3} alt='' />
-        <Uppist />
+        <Link to='https://www.uppist.xyz/'>
+          <Uppist />
+        </Link>
       </span>
     </footer>
   );

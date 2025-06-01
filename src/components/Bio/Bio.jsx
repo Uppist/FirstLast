@@ -41,6 +41,7 @@ export default function Bio() {
           <p>
             Mavis is the{" "}
             <span>Founder of First and Last Wellness, Ten Times Fruits</span>
+            {"  "}
             and <span>LOOD;</span> all of which are designed to promote an
             optimum state of well-being.
           </p>
