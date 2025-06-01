@@ -3,6 +3,7 @@
 import React from "react";
 import styles from "./bio.module.css";
 import image from "../../../assets/desktop/bio.png";
+import { Link } from "react-router-dom";
 
 export default function Bio() {
   return (
@@ -11,7 +12,7 @@ export default function Bio() {
         <div className={styles.bioContent}>
           <div className={styles.bioText}>
             <div className={styles.text}>
-              <h2>Bio</h2>
+              <h2>Meet Our Founder</h2>
               <p>
                 <span>Mavis Izegbune</span> is a Nurse Health Coach and Wellness
                 Consultant. She has over a decade combined experience in
@@ -25,14 +26,14 @@ export default function Bio() {
                 health and productivity goal.
               </p>
               <p>
-                {" "}
-                Furthermore, she has a deep seated desire to empower people to
-                take control of their health and health outcomes, thereby
-                reducing hospital visits and stay. She also seeks to empower
-                systems for productivity, one life at a time by equipping both
-                individuals and organizations with the right tools to build
-                resilience against the odds, as well as adopt a mindset for
-                excellence.
+                <br />
+                <br /> Furthermore, she has a deep seated desire to empower
+                people to take control of their health and health outcomes,
+                thereby reducing hospital visits and stay. She also seeks to
+                empower systems for productivity, one life at a time by
+                equipping both individuals and organizations with the right
+                tools to build resilience against the odds, as well as adopt a
+                mindset for excellence.
               </p>
             </div>
             <img src={image} alt='' />
@@ -43,7 +44,9 @@ export default function Bio() {
             and <span>LOOD;</span> all of which are designed to promote an
             optimum state of well-being.
           </p>
-          <button>Book a session with me</button>
+          <Link to='https://calendly.com/mavisizegbunebookings'>
+            <button>Book a session with me</button>
+          </Link>
         </div>
       </div>
     </div>
