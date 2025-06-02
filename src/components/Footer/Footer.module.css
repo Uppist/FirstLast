@@ -14,6 +14,7 @@
 
 .uppist {
   width: 53px;
+  height: fit-content;
 }
 
 .logo {
@@ -80,7 +81,7 @@
 
 .footer > span {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 2px;
   margin-top: -70px;
 }
@@ -151,7 +152,8 @@
   }
 
   .uppist {
-    width: 25px;
+    width: 30px;
+    height: fit-content;
   }
   .details,
   .footer2 {
@@ -207,11 +209,11 @@
   }
 
   .footer > span img {
-    width: 25px;
+    width: 30px;
   }
 
   .footer > span {
-    margin-top: -85px;
+    margin-top: 0px;
   }
 }
 
